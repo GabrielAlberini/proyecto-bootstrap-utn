@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Digital | Soluciones para tu negocio</title>
+
+  <!-- Carga los estilos de Bootstrap desde un CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <!-- navbar: componente de navegación -->
+  <!-- navbar-expand-lg: expande el menú en pantallas grandes -->
+  <!-- navbar-dark: adapta los colores del menú a fondos oscuros -->
+  <!-- bg-dark: aplica un fondo oscuro -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <!-- container: centra el contenido y limita su ancho según la pantalla -->
+      <div class="container">
+
+        <!-- navbar-brand: estilo para el nombre o logo de la empresa -->
+        <!-- fw-bold: aplica una fuente en negrita -->
+        <a class="navbar-brand fw-bold" href="#">Nova Digital</a>
+
+        <!-- navbar-toggler: botón para abrir y cerrar el menú en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir navegación">
+          <!-- navbar-toggler-icon: icono del botón del menú -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- collapse: permite ocultar o mostrar el menú -->
+        <!-- navbar-collapse: adapta el contenido al sistema de navegación -->
+        <!-- ms-auto: agrega margen automático a la izquierda y desplaza el menú a la derecha -->
+        <div class="collapse navbar-collapse" id="menu">
+
+          <!-- navbar-nav: organiza los elementos como una lista de navegación -->
+          <ul class="navbar-nav ms-auto">
+
+            <!-- nav-item: representa un elemento del menú -->
+            <li class="nav-item">
+              <!-- nav-link: aplica estilos a un enlace de navegación -->
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <!-- bg-primary: aplica el color principal de Bootstrap como fondo -->
+  <!-- text-white: establece el texto en blanco -->
+  <!-- py-5: agrega padding vertical (arriba y abajo) de nivel 5 -->
+  <section id="inicio" class="bg-primary text-white py-5">
+
+    <!-- py-5: agrega espacio interior arriba y abajo -->
+    <!-- text-center: centra horizontalmente el texto -->
+    <div class="container py-5 text-center">
+
+      <!-- display-4: aplica una tipografía de título destacado -->
+      <!-- fw-bold: muestra el título en negrita -->
+      <h1 class="display-4 fw-bold">
+        Llevamos tu negocio al siguiente nivel
+      </h1>
+
+      <!-- lead: destaca el párrafo como texto introductorio -->
+      <!-- mt-3: agrega margen superior de nivel 3 -->
+      <!-- mb-4: agrega margen inferior de nivel 4 -->
+      <p class="lead mt-3 mb-4">
+        Creamos soluciones digitales para empresas que quieren crecer.
+      </p>
+
+      <!-- btn: aplica el estilo base de un botón -->
+      <!-- btn-light: utiliza colores claros -->
+      <!-- btn-lg: aumenta el tamaño del botón -->
+      <a href="#servicios" class="btn btn-light btn-lg">
+        Conocer servicios
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <!-- container: centra el contenido y limita su ancho -->
+  <!-- py-5: agrega padding vertical -->
+  <section id="servicios" class="container py-5">
+
+    <!-- text-center: centra el contenido -->
+    <!-- mb-5: agrega margen inferior de nivel 5 -->
+    <div class="text-center mb-5">
+
+      <!-- fw-bold: muestra el título en negrita -->
+      <h2 class="fw-bold">Nuestros servicios</h2>
+
+      <!-- text-secondary: utiliza el color secundario del tema -->
+      <p class="text-secondary">
+        Herramientas digitales para impulsar tu empresa.
+      </p>
+    </div>
+
+    <!-- row: crea una fila del sistema de grillas de Bootstrap -->
+    <!-- g-4: establece separación horizontal y vertical entre columnas -->
+    <div class="row g-4">
+
+      <!-- SERVICIO 1 -->
+      <!-- col-12: ocupa las 12 columnas disponibles en pantallas pequeñas -->
+      <!-- col-md-6: ocupa 6 de 12 columnas desde 768px aproximadamente -->
+      <!-- col-lg-4: ocupa 4 de 12 columnas desde 992px aproximadamente -->
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <!-- card: crea una tarjeta con estructura visual -->
+        <!-- h-100: hace que la tarjeta ocupe el 100% de la altura disponible -->
+        <!-- shadow-sm: agrega una sombra sutil -->
+        <div class="card h-100 shadow-sm">
+
+          <!-- card-img-top: coloca la imagen en la parte superior de la tarjeta -->
+          <img src="https://placehold.co/600x350/0d6efd/ffffff?text=Desarrollo+Web" class="card-img-top"
+            alt="Desarrollo web">
+
+          <!-- card-body: agrega el área interior de contenido de la tarjeta -->
+          <div class="card-body">
+
+            <!-- card-title: aplica estilos al título de la tarjeta -->
+            <!-- h5: utiliza el tamaño tipográfico de un encabezado h5 -->
+            <h3 class="card-title h5">Desarrollo web</h3>
+
+            <!-- card-text: aplica estilos al texto de la tarjeta -->
+            <p class="card-text">
+              Diseñamos páginas web modernas, rápidas y adaptables
+              a todos los dispositivos.
+            </p>
+
+            <!-- btn: estilo base del botón -->
+            <!-- btn-primary: utiliza el color principal -->
+            <a href="#contacto" class="btn btn-primary">
+              Más información
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICIO 2 -->
+      <!-- Las clases de columna permiten que la tarjeta se adapte a la pantalla -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+
+          <img src="https://placehold.co/600x350/198754/ffffff?text=Marketing+Digital" class="card-img-top"
+            alt="Marketing digital">
+
+          <div class="card-body">
+            <h3 class="card-title h5">Marketing digital</h3>
+
+            <p class="card-text">
+              Ayudamos a las empresas a llegar a nuevos clientes
+              mediante estrategias digitales.
+            </p>
+
+            <a href="#contacto" class="btn btn-primary">
+              Más información
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICIO 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+
+          <img src="https://placehold.co/600x350/6f42c1/ffffff?text=Consultoria" class="card-img-top"
+            alt="Consultoría tecnológica">
+
+          <div class="card-body">
+            <h3 class="card-title h5">Consultoría tecnológica</h3>
+
+            <p class="card-text">
+              Te acompañamos en la elección de herramientas
+              para mejorar los procesos de tu negocio.
+            </p>
+
+            <a href="#contacto" class="btn btn-primary">
+              Más información
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <!-- bg-light: aplica un fondo claro -->
+  <!-- py-5: agrega padding vertical -->
+  <section id="contacto" class="bg-light py-5">
+
+    <div class="container">
+
+      <!-- row: crea una fila de grilla -->
+      <!-- justify-content-center: centra las columnas horizontalmente -->
+      <div class="row justify-content-center">
+
+        <!-- col-12: ocupa todo el ancho en pantallas pequeñas -->
+        <!-- col-md-8: ocupa 8 de 12 columnas en pantallas medianas -->
+        <!-- col-lg-6: ocupa 6 de 12 columnas en pantallas grandes -->
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <!-- text-center: centra el título -->
+          <!-- fw-bold: aplica negrita -->
+          <!-- mb-3: agrega margen inferior -->
+          <h2 class="text-center fw-bold mb-3">
+            Contactanos
+          </h2>
+
+          <!-- text-center: centra el texto -->
+          <!-- text-secondary: utiliza el color secundario -->
+          <!-- mb-4: agrega margen inferior -->
+          <p class="text-center text-secondary mb-4">
+            Completá el formulario y nos pondremos en contacto.
+          </p>
+
+          <form action="#" method="post">
+
+            <!-- mb-3: separa este campo del siguiente mediante margen inferior -->
+            <div class="mb-3">
+
+              <!-- form-label: aplica estilos a la etiqueta del campo -->
+              <label for="nombre" class="form-label">
+                Nombre completo
+              </label>
+
+              <!-- form-control: da estilo al input y ocupa el ancho disponible -->
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">
+                Correo electrónico
+              </label>
+
+              <!-- form-control: aplica estilos al campo de entrada -->
+              <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="servicio" class="form-label">
+                Servicio de interés
+              </label>
+
+              <!-- form-select: aplica estilos al menú desplegable -->
+              <select class="form-select" id="servicio" name="servicio" required>
+                <option value="">Seleccioná un servicio</option>
+                <option value="desarrollo-web">Desarrollo web</option>
+                <option value="marketing">Marketing digital</option>
+                <option value="consultoria">Consultoría tecnológica</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">
+                Mensaje
+              </label>
+
+              <!-- form-control: aplica estilos al área de texto -->
+              <!-- rows="4": establece una altura inicial de cuatro filas de texto -->
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                placeholder="Contanos sobre tu proyecto" required></textarea>
+            </div>
+
+            <!-- btn: estilo base de botón -->
+            <!-- btn-primary: aplica el color principal -->
+            <!-- w-100: ocupa el 100% del ancho disponible -->
+            <button type="submit" class="btn btn-primary w-100">
+              Enviar consulta
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <!-- bg-dark: fondo oscuro -->
+  <!-- text-white: texto blanco -->
+  <!-- text-center: centra el contenido -->
+  <!-- py-4: agrega padding vertical de nivel 4 -->
+  <footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+      <!-- mb-1: margen inferior pequeño -->
+      <!-- fw-bold: texto en negrita -->
+      <p class="mb-1 fw-bold">Nova Digital</p>
+
+      <!-- mb-0: elimina el margen inferior -->
+      <!-- text-white-50: texto blanco con menor opacidad -->
+      <p class="mb-0 text-white-50">
+        © 2026 Nova Digital. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Carga el JavaScript de Bootstrap para componentes interactivos,
+       como el menú desplegable en dispositivos pequeños -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
